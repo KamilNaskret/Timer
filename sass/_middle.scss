@@ -1,0 +1,40 @@
+.main{
+    height:70vh;
+    display:flex;
+    @include flex(column,center,center);
+    &__title{
+        font-size:1.5rem;
+        text-transform: uppercase;
+        margin-bottom:50px;
+        letter-spacing:3px;
+    }
+    &__timer{
+        width:100%;
+        display:flex;
+        @include flex(row,center,space-around);
+        &-item{
+            display:flex;
+            flex-direction: column;
+            height:80px;
+            width:80px;
+        }
+        &-clock{
+            flex-grow:1;
+            display:flex;
+            @include flex(row,center,center);
+            border-radius:5px;
+            background-color: hsl(236, 21%, 26%);
+            margin-bottom:10px;
+        }
+        &-title{
+            text-align: center;
+            text-transform: uppercase;
+            font-size:0.8rem;
+            letter-spacing: 2px;
+        }
+        &-value{
+            color: hsl(345, 95%, 68%);
+            font-size:30px;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <title>Frontend Mentor | Launch countdown timer</title>
+  <script defer src="script/app.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { color:#000; font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <main class="main">
+      <h1 class="main__title">
+        We're launching soon
+      </h1>
+      <div class="main__timer">
+        <div class="main__timer-item">
+          <div class="main__timer-clock">
+            <p class="main__timer-value days"></p>
+          </div>
+          <h2 class="main__timer-title">
+            days
+          </h2>
+        </div>
+        <div class="main__timer-item">
+          <div class="main__timer-clock">
+            <p class="main__timer-value hours"></p>
+          </div>
+          <h2 class="main__timer-title">
+            hours
+          </h2>
+        </div>
+        <div class="main__timer-item">
+          <div class="main__timer-clock">
+            <p class="main__timer-value minutes"></p>
+          </div>
+          <h2 class="main__timer-title">
+            minutes
+          </h2>
+        </div>
+        <div class="main__timer-item">
+          <div class="main__timer-clock">
+            <p class="main__timer-value seconds"></p>
+          </div>
+          <h2 class="main__timer-title">
+            seconds
+          </h2>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__socials">
+        <div class="footer__socials-social">
+          <a href="#" class="footer__socials-link" title="facebook">
+            <img src="./images/icon-facebook.svg" alt="facebook-social">
+          </a>
+        </div>
+        <div class="footer__socials-social">
+          <a href="#" class="footer__socials-link" title="pinterest">
+            <img src="./images/icon-pinterest.svg" alt="pinterest-social">
+          </a>
+        </div>
+        <div class="footer__socials-social">
+          <a href="#" class="footer__socials-link" title="instagram">
+            <img src="./images/icon-instagram.svg" alt="instagram-social">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">TechKami</a>.
+  </div>
+</body>
+</html>

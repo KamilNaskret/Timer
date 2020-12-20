@@ -1,0 +1,28 @@
+@import 'config';
+@import 'bgc';
+@import 'footer';
+@import 'middle';
+@media (min-width:700px){
+    .main__title{
+        font-size:2rem;
+    }
+    .main__timer{
+        height:20vh;
+        max-width:700px;
+        &-item{
+            height:70%;
+            flex-grow:0.1;
+        }
+        &-value{
+            font-size:4rem;
+        }
+        &-title{
+            font-size:1rem;
+        }
+    }
+}
+@media(min-width:1000px){
+    .main__timer-item{
+        height:80%;
+    }
+}
