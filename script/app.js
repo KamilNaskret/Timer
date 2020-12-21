@@ -23,14 +23,11 @@ class Timer{
     countdown(){
         const newYear = new Date("2021-01-01");
         const nowDate = new Date();
-        let days = Math.floor((newYear-nowDate)/1000/3600/24);
-        let hours = Math.floor((newYear-nowDate)/1000/3600)%24-1;
-        let minutes = Math.floor((newYear-nowDate)/1000/60)%60;
-        let seconds = Math.floor((newYear-nowDate)/1000)%60;
-        this.daysCount=days;
-        this.hoursCount=hours;
-        this.minutesCount=minutes;
-        this.secondsCount=seconds;
+        this.daysCount= Math.floor((newYear-nowDate)/1000/3600/24);
+        this.hoursCount = Math.floor((newYear-nowDate)/1000/3600)%24-1;
+        if(this.hoursCount<0) this.hoursCount=0;
+        this.minutesCount = Math.floor((newYear-nowDate)/1000/60)%60;
+        this.secondsCount = Math.floor((newYear-nowDate)/1000)%60;
     }
     setValue(){
         this.days.innerHTML=this.daysCount;
